@@ -95,7 +95,7 @@
   }
 
   .gradient-text {
-    @apply bg-purple-gradient bg-cover bg-clip-text text-transparent;
+    @apply bg-purple-gradient bg-clip-text text-transparent;
   }
 
   /* ===== ALIGNMENTS */
@@ -110,7 +110,7 @@
   /* ===== TYPOGRAPHY */
   /* 44 */
   .h1-semibold {
-    @apply text-[36px] font-semibold sm:text-[44px] leading-[120%] sm:leading-[56px];
+    @apply text-[27px] font-semibold sm:text-[44px] leading-[120%] sm:leading-[56px];
   }
 
   /* 36 */
@@ -120,7 +120,7 @@
 
   /* 30 */
   .h3-bold {
-    @apply font-bold text-[30px] leading-[140%];
+    @apply font-bold text-[25px] leading-[140%];
   }
 
   /* 24 */
@@ -167,7 +167,11 @@
 
   /* =====  SHADCN OVERRIDES */
   .button {
-    @apply py-4 px-6 flex-center gap-3 rounded-full p-16-semibold focus-visible:ring-offset-0 focus-visible:ring-transparent !important;
+    @apply py-6 px-6 flex-center gap-3 rounded-md md:w-60 w-full p-16-semibold focus-visible:ring-offset-0 focus-visible:ring-transparent !important;
+  }
+
+  .insuffButton {
+    @apply py-6 px-6 flex-center gap-3 rounded-md md:w-60 w-full p-16-semibold focus-visible:ring-offset-0 focus-visible:ring-transparent !important;
   }
 
   .dropdown-content {
@@ -187,7 +191,7 @@
   }
 
   .submit-button {
-    @apply bg-purple-gradient bg-cover rounded-full py-4 px-6 p-16-semibold h-[50px] w-full md:h-[54px];
+    @apply bg-purple-gradient bg-cover md:w-60 w-full py-6 px-6 p-16-semibold h-[50px] rounded-lg md:h-[54px];
   }
 
   .select-field {
@@ -195,7 +199,7 @@
   }
 
   .select-trigger {
-    @apply flex items-center  gap-2 py-5 capitalize focus-visible:outline-none;
+    @apply flex items-center gap-2 py-5 capitalize focus-visible:outline-none;
   }
 
   .select-item {
@@ -220,7 +224,7 @@
 
   /* Home Page */
   .home {
-    @apply sm:flex-center hidden h-72 flex-col gap-4 rounded-[20px] border bg-banner bg-cover bg-no-repeat p-10 shadow-inner;
+    @apply flex-center h-72 flex-col gap-4 rounded-[20px] border bg-gray-800 bg-cover bg-no-repeat p-10 mb-8 shadow-inner;
   }
 
   .home-heading {
@@ -328,7 +332,7 @@
   }
 
   .sidebar-nav_element {
-    @apply flex-center p-16-semibold w-full whitespace-nowrap rounded-full bg-cover  transition-all hover:bg-purple-100 hover:shadow-inner;
+    @apply flex-center p-16-semibold w-full whitespace-nowrap rounded-md bg-cover hover:bg-purple-100 hover:shadow-inner;
   }
 
   .sidebar-link {
